@@ -1,0 +1,160 @@
+.heading--1 {
+  font-size: 2.5rem;
+  line-height: 1.6;
+  font-weight: 700;
+  color: var(--color-primary-1);
+}
+.heading--2 {
+  color: var(--color-primary-1);
+  font-size: 1.5rem;
+  font-weight: 450;
+  line-height: 1.2;
+}
+.heading--3 {
+  color: var(--color-neutral-3);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.heading--4 {
+  color: var(--color-neutral-1);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.heading--5 {
+  color: var(--color-neutral-1);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  @media only screen and (max-width: $bp-tiny) {
+    // font-size: 1.5rem;
+    width: 28rem;
+  }
+}
+
+.heading--6 {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  font-weight: 450;
+  line-height: 1.2;
+}
+.paragraph {
+  color: var(--color-neutral-1);
+  font-size: 1.45rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+  // margin-left:rem;
+}
+.amount {
+  color: var(--color-primary-2);
+  margin-top: -1rem;
+  position: relative;
+
+  text-align: center;
+  justify-content: center;
+  transform: translate(20%, 10%);
+  display: flex;
+  @media only screen and (max-width: $bp-tiny) {
+    margin-left: 6rem;
+  }
+  @media only screen and (max-width: $bp-bit) {
+    margin-left: 0rem;
+  }
+}
+.amount--2 {
+  margin-top: -1rem;
+  margin-left: -1.5rem;
+  @media only screen and (max-width: $bp-tiny) {
+    margin-left: 10rem;
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-bit) {
+    margin-top: 0rem;
+    margin-left: 0rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+
+.amount--3 {
+  font-size: 1.28rem;
+  margin-left: 20rem;
+  @media only screen and (max-width: $bp-tiny) {
+    margin-top: -1.5rem;
+    margin-left: 25.5rem;
+  }
+
+  @media only screen and (max-width: $bp-bit) {
+    margin-top: -2.5rem;
+    margin-left: 15rem;
+  }
+}
+.amount--4 {
+  color: var(--color-primary-2);
+  font-size: 1.5rem;
+  margin-left: 18rem;
+  font-weight: 700;
+
+  @media only screen and (max-width: $bp-tiny) {
+    // margin-top: -2.5rem;
+    margin-left: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-bit) {
+    margin-left: 0rem;
+  }
+}
+.header {
+  text-align: center;
+}
+.yearly {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-primary-1);
+  position: relative;
+  top: 30%;
+  white-space: nowrap;
+  overflow: hidden;
+  left: -20%;
+
+  @media only screen and (max-width: $bp-tiny) {
+  }
+}
+.yearly--1 {
+  @media only screen and (max-width: $bp-tiny) {
+    margin-top: 2.8rem;
+    left: -25%;
+    margin-left: -4.3rem;
+  }
+}
+.yearly--2 {
+  @media only screen and (max-width: $bp-tiny) {
+    margin-top: 3rem;
+
+    margin-left: -7rem;
+  }
+}
+
+.yearly--3 {
+  @media only screen and (max-width: $bp-tiny) {
+    margin-top: 3rem;
+
+    margin-left: -4rem;
+  }
+}
+.text {
+  @media only screen and (max-width: $bp-tiny) {
+    display: none;
+  }
+}
+.buttons {
+  color: #ffff;
+  text-decoration: none;
+}
+.buttons--1 {
+  color: var(--color-primary-1);
+  text-decoration: none;
+}

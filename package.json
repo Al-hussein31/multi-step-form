@@ -1,0 +1,21 @@
+{
+  "name": "multi-step-form-main",
+  "version": "1.0.0",
+  "description": "Multiple Step Form",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html  --dist-dir ./dist"
+  },
+  "author": "Hussein Yahaya",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.0",
+    "parcel": "^2.10.0"
+  },
+  "dependencies": {
+    "core-js": "^3.33.0",
+    "fractional": "^1.0.0",
+    "loadash": "^1.0.0",
+    "regenerator-runtime": "^0.14.0"
+  }
+}

@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  height: 100%;
+  width: 60vw;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+  background-color: var(--color-neutral-4);
+  border-radius: 1.25rem;
+  box-shadow: $box-shadow;
+  padding: $padding-equal;
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+  @media only screen and (max-width: $bp-tiny) {
+    background-color: var(--color-primary-4);
+    width: 100%;
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+}

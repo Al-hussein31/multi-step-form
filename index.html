@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/Sass/main.scss" />
+
+    <script type="module" src="src/Js/main.js"></script>
+
+    <title>Multi-step form</title>
+  </head>
+  <body>
+    <header class="container">
+      <!-- Sidebar start -->
+
+      <nav class="side-nav">
+        <div class="side-nav__container">
+          <li class="side-nav__item">
+            <a
+              class="side-nav__link side-nav__link--1 side-nav__link--active"
+              href="#section--1"
+              >1</a
+            >
+            <div class="side-nav__text">
+              <h4 class="heading--4 text">Step 1</h4>
+              <h3 class="heading--3 text">Your info</h3>
+            </div>
+          </li>
+          <li class="side-nav__item">
+            <a class="side-nav__link" href="#section--2">2</a>
+            <div class="side-nav__text">
+              <h4 class="heading--4 text">Step 2</h4>
+              <h3 class="heading--3 text">Select plan</h3>
+            </div>
+          </li>
+          <li class="side-nav__item">
+            <a class="side-nav__link" href="#section--3">3</a>
+            <div class="side-nav__text">
+              <h4 class="heading--4 text">Step 3</h4>
+              <h3 class="heading--3 text">Add-ons</h3>
+            </div>
+          </li>
+          <li class="side-nav__item">
+            <a class="side-nav__link side-four" href="#section--4">4</a>
+            <div class="side-nav__text">
+              <h4 class="heading--4 text">Step 4</h4>
+              <h3 class="heading--3 text">Summary</h3>
+            </div>
+          </li>
+        </div>
+      </nav>
+
+      <!-- Sidebar end -->
+      <section class="form">
+        <!-- Step 1 start -->
+        <section class="sections section--1 hidden" id="section--1">
+          <div class="form__heading">
+            <h1 class="heading--1">Personal info</h1>
+          </div>
+          <div class="form__paragraph">
+            <p class="heading--5">
+              Personal info Please provide your name, email address, and phone
+              number.
+            </p>
+          </div>
+          <div class="form__inputs">
+            <div class="form__title">
+              <div class="form__headings inputs__heading--one heading--2">
+                Name
+              </div>
+              <div class="heading--6 error-message error-message-name hidden">
+                This field is required
+              </div>
+            </div>
+            <div class="form__group">
+              <form action="#" id="search">
+                <input
+                  type="text"
+                  class="form__input name-input"
+                  placeholder="e.g. Stephen King"
+                  id="name"
+                  required
+                />
+              </form>
+            </div>
+            <div class="form__title">
+              <div class="form__headings inputs__heading--one heading--2">
+                Email Address
+              </div>
+              <div
+                class="heading--6 error-message error-message-email hidden"
+                id="error-message"
+              >
+                This field is required
+              </div>
+            </div>
+
+            <div class="form__group">
+              <input
+                type="email"
+                class="form__input email-input"
+                placeholder="e.g. husseinalimi@gmail.com"
+                id="email"
+              />
+            </div>
+            <div class="form__title">
+              <div class="form__headings inputs__heading--one heading--2">
+                Phone Number
+              </div>
+              <div class="heading--6 error-message error-message-number hidden">
+                This field is required
+              </div>
+            </div>
+            <div class="form__group">
+              <form action="#" id="search">
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  pattern="\d*"
+                  class="form__input number-input"
+                  placeholder="e.g. +1 234 567 890"
+                  id="num"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="form__button2">
+            <button class="form__button--3 btn--next">
+              <a class="buttons" href="#section--2"> Next Step</a>
+            </button>
+          </div>
+        </section>
+        <!-- Step 1 end -->
+        <!-- Step 2 start -->
+        <section class="sections section--2 hidden" id="section--2">
+          <div class="form__heading">
+            <h1 class="heading--1">Select your plan</h1>
+          </div>
+          <div class="form__paragraph">
+            <p class="heading--5">
+              You have the option of monthly or yearly hidden billing.
+            </p>
+          </div>
+          <div class="form__cards">
+            <div class="form__card form__card--active">
+              <img
+                src="src/images/icon-arcade.svg"
+                alt="Arcade"
+                class="form__image"
+              />
+              <div class="form__card-component">
+                <div class="form__card--heading heading--2" id="#">
+                  <div class="form__text-update">Arcade</div>
+                </div>
+                <div class="form__card--money heading--4">
+                  <span class="month-amount">+$9/mo</span>
+                </div>
+              </div>
+              <div class="yearly yearly--1 hidden">2 months free</div>
+            </div>
+            <div class="form__card">
+              <img
+                src="src/images/icon-advanced.svg"
+                alt="Arcade"
+                class="form__image"
+              />
+              <div class="form__card-component">
+                <div class="form__card--heading heading--2 text-update" id="#">
+                  <div class="form__text-update">Advanced</div>
+                </div>
+                <div class="form__card--money heading--4">
+                  <span class="month-amount">+$12/mo</span>
+                </div>
+              </div>
+              <div class="yearly yearly--2 hidden">2 months free</div>
+            </div>
+            <div class="form__card">
+              <img
+                src="src/images/icon-pro.svg"
+                alt="Arcade"
+                class="form__image"
+              />
+              <div class="form__card-component">
+                <div class="form__card--heading heading--2 text-update" id="#">
+                  <div class="form__text-update">Pro</div>
+                </div>
+                <div class="form__card--money heading--4">
+                  <span class="month-amount">+$15/mo</span>
+                </div>
+              </div>
+              <div class="yearly yearly--3 hidden">2 months free</div>
+            </div>
+          </div>
+          <div class="form__footer">
+            <label
+              class="form__footer-text heading--5 form__footer-text--active"
+              for="button-check"
+              >Monthly</label
+            >
+
+            <div class="button-check">
+              <input
+                type="checkbox"
+                value="None"
+                id="button-check"
+                name="check"
+                autocomplete="off"
+              />
+              <label for="button-check"></label>
+            </div>
+
+            <label
+              class="form__footer-text form__footer-text--year heading--5"
+              for="button-check"
+              >Yearly</label
+            >
+          </div>
+
+          <div class="form__button">
+            <button class="form__button--1 btn--prev">
+              <a class="buttons buttons--1" href="#section--1"> Go Back</a>
+            </button>
+          </div>
+          <div class="form__button2">
+            <button class="form__button--21 btn--next">
+              <a class="buttons" href="#section--3"> Next Step</a>
+            </button>
+          </div>
+        </section>
+        <!-- Step 2 end -->
+        <!-- Step 3 start -->
+        <section class="sections section--3 hidden" id="section--3">
+          <div class="form__heading">
+            <h1 class="heading--1">Pick add-ons</h1>
+          </div>
+          <div class="form__paragraph">
+            <p class="heading--5">
+              Add-ons help enhance your gaming experience.
+            </p>
+          </div>
+          <div class="form__boxs">
+            <div class="form__box">
+              <input
+                class="form__box-radio form__box-radio--active"
+                type="checkbox"
+                id="checkbox-1"
+                autocomplete="off"
+              />
+              <label for="checkbox-1" class="form__box-text" id="text-box">
+                <div class="form__box-heading heading--2">OnlineService</div>
+                <p class="form__box-paragraph heading--5">
+                  Access to multiplayer games
+                  <span class="month-amount amount"> +$1/mo</span>
+                </p>
+              </label>
+            </div>
+            <div class="form__box">
+              <input
+                class="form__box-radio"
+                type="checkbox"
+                id="checkbox-2"
+                autocomplete="off"
+              />
+              <label for="checkbox-2" class="form__box-text" id="text-box">
+                <div class="form__box-heading heading--2">LargerStorage</div>
+                <p class="form__box-paragraph heading--5">
+                  Extra 1TB of cloud save
+                  <span class="month-amount amount"> +$2/mo</span>
+                </p>
+              </label>
+            </div>
+
+            <div class="form__box">
+              <input
+                class="form__box-radio"
+                type="checkbox"
+                id="checkbox-3"
+                autocomplete="off"
+              />
+              <label for="checkbox-3" class="form__box-text" id="text-box">
+                <div class="form__box-heading heading--2">
+                  CustomizableProfile
+                </div>
+                <p class="form__box-paragraph heading--5">
+                  Custom theme on your profile
+                  <span class="month-amount amount">+$2/mo</span>
+                </p>
+              </label>
+            </div>
+          </div>
+          <div class="form__button">
+            <button class="form__button--1 btn--prev">
+              <a class="buttons buttons--1" href="#section--2"> Go Back</a>
+            </button>
+          </div>
+          <div class="form__button2">
+            <button class="form__button--21 btn--next">
+              <a class="buttons" href="#section--4"> Next Step</a>
+            </button>
+          </div>
+        </section>
+        <!-- Step 3 end -->
+        <!-- Step 4 start -->
+        <section class="sections section--4" id="section--4">
+          <div class="form__heading">
+            <h1 class="heading--1">Finishing up</h1>
+          </div>
+          <div class="form__paragraph">
+            <p class="heading--5">
+              Double-check everything looks OK before confirming.
+            </p>
+          </div>
+
+          <sub class="form__section">
+            <div class="wrapper__header">
+              <div class="form__section-heading heading--2">
+                <span class="card-text" id="card-text">Arcade</span>
+                <span class="month-text">(Monthly)</span>
+
+                <p class="form__link heading--5">
+                  <a
+                    href="#section--2"
+                    class="form__links form__links--change buttons"
+                    >change</a
+                  >
+
+                  <span class="month-amount amount--2 heading--2">+$9/mo</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="wrapper__bottom">
+              <p class="wrapper__bottom-bottom heading--5">
+                Online service
+                <span class="month-amount amount--3 heading--2"> +$1/mo</span>
+              </p>
+              <p class="wrapper__bottom-bottom heading--5">
+                larger storage
+                <span class="month-amount amount--3 heading--2"> +$2/mo</span>
+              </p>
+            </div>
+          </sub>
+
+          <div class="form__bottom">
+            <p class="form__bottoms heading--5">
+              Total
+              <span class="month-total">(per month)</span>
+              <span class="month-amount amount--4 heading--2"> $12/mo</span>
+            </p>
+          </div>
+
+          <div class="form__button">
+            <button class="form__button--1 btn--prev">
+              <a class="buttons buttons--1" href="#section--3">Go Back</a>
+            </button>
+          </div>
+          <div class="form__button2">
+            <button class="form__button--21 btn--next">
+              <a class="buttons buttons-confirm" href="#section--5"> Confirm</a>
+            </button>
+          </div>
+
+          <!-- Step 4 end -->
+        </section>
+        <!-- Step 4 end -->
+        <!-- Step 5 start -->
+        <section class="sections section--5 hidden" id="section--5">
+          <div class="form__images">
+            <img
+              src="src/images/icon-thank-you.svg"
+              alt="Thanks"
+              class="form__image-logo"
+            />
+          </div>
+          <div class="form__headerss">
+            <h1 class="heading--1 header">Thank you!</h1>
+          </div>
+          <div class="form__paragraph--1">
+            <p class="paragraph">
+              Thank you! Thanks for confirming your subscription! We hope you
+              have fun using our platform. If you ever need support, please feel
+              free to email us at support@loremgaming.com.
+            </p>
+          </div>
+        </section>
+        <!-- Step 5 end -->
+      </section>
+    </header>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/husseinalimi">Hussein Yahaya</a>.
+    </div>
+  </body>
+</html>

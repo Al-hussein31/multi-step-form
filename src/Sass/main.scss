@@ -1,0 +1,26 @@
+// Import abstracts
+@import 'abstract/variables';
+@import 'abstract/placeholder';
+
+// Import basic styles
+
+@import 'basic/typography';
+@import 'basic/base';
+
+// Import components
+@import 'components/buttons';
+@import 'components/forms';
+
+// Import layouts
+
+@import 'layouts/footer';
+@import 'layouts/sidebar';
+
+// Import page-specific styles
+@import 'pages/home/home.scss';
+
+// Import other page-specific styles as needed
+
+// Your custom styles for the multi-step form
+
+// Any other custom styles or imports

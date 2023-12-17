@@ -1,0 +1,29 @@
+:root {
+  --color-primary-1: hsl(213, 96%, 18%);
+  --color-primary-2: hsl(243, 100%, 62%);
+  --color-primary-3: hsl(228, 100%, 84%);
+  --color-primary-4: hsl(206, 94%, 95%);
+  --color-primary-5: hsl(206, 94%, 88%);
+
+  --color-secondary: hsl(354, 84%, 57%);
+
+  --color-neutral-1: hsl(231, 11%, 63%);
+  --color-neutral-2: hsl(229, 24%, 87%);
+  --color-neutral-3: hsl(217, 100%, 97%);
+  --color-neutral-31: hsla(215, 19%, 55%, 0.6);
+  --color-neutral-4: hsl(0, 0%, 100%);
+}
+
+$box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
+$box-shadow-2: 0.4rem 0.1rem 0.4rem rgba(1, 0, 0, 0.1);
+$padding-equal: 1.25rem 1.25rem;
+$padding-equal-2: 2.25rem 2.25rem;
+$padding-side: 2.25rem 1.25rem;
+
+$bp-biggest: 90em; //1440px
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-mid: 56.25em; //900px
+$bp-tiny: 37.5em; //600px
+$bp-bit: 23.4375em; //375px
+// $bp-bit: 31.25em; //500px

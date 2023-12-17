@@ -1,0 +1,19 @@
+.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.sections {
+  @media only screen and (max-width: $bp-tiny) {
+    background-color: var(--color-neutral-4);
+    width: 90%;
+    box-shadow: $box-shadow;
+    margin-top: 7rem;
+    border-radius: 1.5rem;
+    margin-left: -2rem;
+
+    position: absolute;
+    padding: 2rem 1.5rem;
+  }
+}
